@@ -74,8 +74,8 @@
 				$("a").hover(function(){$(this).attr("title",$(this).attr("href"))},function(){$(this).removeAttr("title")});
 				
 				/* ajouter "Chapitre 1 :" devant le 1er titre h2<br>et "Chapitre 2 :" devant le 2ème titre h2 */
-				$("#contenu").children("h2").eq(0).prepend("Chapitre 1:");
-				$("#contenu").children("h2").eq(1).prepend("Chapitre 2:");
+				$("ol").children("li").eq(6).click(()=>{$("#contenu").children("h2").eq(0).prepend("Chapitre 1: ");
+				$("#contenu").children("h2").eq(1).prepend("Chapitre 2: ")});
 
 				
 			});
